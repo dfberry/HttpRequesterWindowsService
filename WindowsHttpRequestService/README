@@ -1,0 +1,18 @@
+﻿Start Visual Studio Command Prompt with elevated priviledges.
+Make sure output directory (if you are installing/starting service from there) has LOCAL SERVICE allowed in security.
+sc commands were tested and proved to work
+installutil commands were tested and proved to work
+
+
+You can launch Server Explorer and verify that your service has been installed or uninstalled. 
+ --------------------------------------------
+ http://stackoverflow.com/questions/1945536/prompting-username-password-while-installing-the-windows-service-in-c-sharp
+
+
+ If you do not want that your web service will prompt for UserName and Password Go to Installer Class(Design Mode) of the service the Right Click on ProcessInstaller-->Propertied; set Account as Local Service.
+
+Now use the installutil command , it will not ask for username/Password.
+
+---------------------------------------------
+
+Installer Tool - http://msdn.microsoft.com/en-us/library/50614e95(v=VS.80).aspx
