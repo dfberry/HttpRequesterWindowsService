@@ -1,0 +1,2 @@
+Use Sc.exe create to get service into registry
+Make sure directory has LOCAL SERVICE permissions - http://stackoverflow.com/questions/574411/system-error-5-access-is-denied-when-starting-a-net-service
